@@ -5,6 +5,13 @@ import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { DocumentScanner } from '@ionic-native/document-scanner/ngx';
+import { CardIO } from '@ionic-native/card-io/ngx';
+import { CameraPreview } from '@ionic-native/camera-preview/ngx';
+import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
+import { Camera } from '@ionic-native/camera/ngx';
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
+import { File } from '@ionic-native/file/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +23,13 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [
     StatusBar,
     SplashScreen,
+    DocumentScanner,
+    CardIO,
+    CameraPreview,
+    FingerprintAIO,
+    Camera,
+    SocialSharing,
+    File,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
